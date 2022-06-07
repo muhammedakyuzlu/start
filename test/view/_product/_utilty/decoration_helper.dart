@@ -1,0 +1,14 @@
+import '/src/decoration/circle_decoration.dart';
+import 'package:flutter/material.dart';
+
+import '../../../core/extension/context_extension.dart';
+
+class DecorationHelper {
+  BuildContext? context;
+  DecorationHelper({
+    this.context,
+  });
+
+  Decoration get circleDecoriaton =>
+      CircleDecoration(color: context!.colors.surface, radius: 3);
+}
